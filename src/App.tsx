@@ -11,6 +11,6 @@ function App() {
 };
 
 let tre = new CardDek();
-tre.vivod();
+tre.getCards(5);
 
 export default App
