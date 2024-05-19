@@ -1,6 +1,6 @@
 import './App.css';
 import Card from "./Card/Card.tsx";
-
+import CardDek from "./lib/addClasses.ts";
 
 function App() {
   return (
@@ -9,5 +9,8 @@ function App() {
     </div>
   );
 };
+
+let tre = new CardDek();
+tre.vivod();
 
 export default App
