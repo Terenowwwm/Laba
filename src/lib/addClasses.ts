@@ -7,7 +7,6 @@ class Card{
     this.suit = suit;
   }
 }
-
 class CardDek {
   list: Card[];
   constructor() {
@@ -23,10 +22,11 @@ class CardDek {
   }
 
   getCard = () =>{
+    let tre: Card[];
     let random: number = Math.floor(Math.random() * this.list.length);
     // console.log(random);
-    const tre:Card[] = this.list.splice(random,1);
-    console.log(tre[0]);
+    tre = this.list.splice(random,1);
+    // console.log(tre[0]);
     // console.log(this.list);
     return tre[0];
   }
@@ -34,11 +34,15 @@ class CardDek {
   getCards = (num:number) =>{
     let cards: Card[] = [];
     for(let i = 0; i < num; i++){
-      let one:Card = this.getCard();
+      let one:Card  = this.getCard();
+      console.log(one.rank);
       cards.push(one);
     }
+    console.log(cards);
+    return cards;
   }
+
 }
 
 
-export default CardDek
+export default CardDek;
