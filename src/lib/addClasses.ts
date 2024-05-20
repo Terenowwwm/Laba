@@ -24,10 +24,7 @@ class CardDek {
   getCard = () =>{
     let tre: Card[];
     let random: number = Math.floor(Math.random() * this.list.length);
-    // console.log(random);
     tre = this.list.splice(random,1);
-    // console.log(tre[0]);
-    // console.log(this.list);
     return tre[0];
   }
 
@@ -35,10 +32,8 @@ class CardDek {
     let cards: Card[] = [];
     for(let i = 0; i < num; i++){
       let one:Card  = this.getCard();
-      console.log(one.rank);
       cards.push(one);
     }
-    console.log(cards);
     return cards;
   }
 

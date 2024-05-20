@@ -8,9 +8,9 @@ interface Props {
 
 const Card:React.FC<Props> = ({rank,suit}) => {
   return (
-    <span className={`card rank-${rank} spades`}>
+    <span className={`card rank-${rank} ${suit}`}>
       <span className='rank'>{rank}</span>
-      <span className='suit'>{suit}</span>
+      <span className='suit'></span>
     </span>
   );
 };
