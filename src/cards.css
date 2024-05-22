@@ -9,7 +9,11 @@
 
 /* card itself
 ********************************************************************/
-
+.playingCards{
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
 .playingCards .card {
   display: inline-block;
   width: 4.3em;
@@ -95,7 +99,9 @@
 ********************************************************************/
 
 /* top left main info (rank and suit) */
-
+.rank{
+  text-transform: uppercase;
+}
 .playingCards .card .rank,
 .playingCards .card .suit {
   display: block;
@@ -105,7 +111,7 @@
 .playingCards .card .rank {
 }
 .playingCards .card .suit {
-  line-height: .7;
+  line-height: .9;
 }
 
 /* checkbox */
@@ -162,7 +168,7 @@
 /* inner multiple suits */
 .playingCards .card .suit:after {
   display: block;
-  margin-top: -.8em;
+  /*margin-top: -.8em;*/
   text-align: center;
   white-space: pre;
   line-height: .9;
@@ -371,6 +377,7 @@
   font-size: 3em;
   right: .1em;
   bottom: .25em;
+
   word-spacing: normal;
   letter-spacing: normal;
   line-height: 1;

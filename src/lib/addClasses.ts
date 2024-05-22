@@ -31,8 +31,13 @@ class CardDek {
   getCards = (num:number) =>{
     let cards: Card[] = [];
     for(let i = 0; i < num; i++){
+
       let one:Card  = this.getCard();
-      cards.push(one);
+      if (one === null || one === undefined) {
+        console.log('Карты закончились');
+      }else{
+        cards.push(one);
+      }
     }
     return cards;
   }
